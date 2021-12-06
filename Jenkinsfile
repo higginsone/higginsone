@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'node'
       args '-v /home/ubuntu/jenkins_data'
+      image 'node:latest'
     }
 
   }
